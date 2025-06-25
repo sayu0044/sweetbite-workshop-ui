@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Orders - SweetBite</title>
+  <link rel="stylesheet" href="../assets/css/sweetbite-admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/sweetbite-custom.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/emboh.png">
+
+</head>
+<body class="orders-page">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="dashboard.html" class="logo">
+      <div class="logo-icon">
+        <img src="../assets/img/merah.png" alt="SweetBite Logo">
+      </div>
+      <span class="logo-text">SweetBite</span>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="dashboard.html" class="nav-link">
+          <i class="fas fa-chart-line"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="products.html" class="nav-link">
+          <i class="fas fa-box"></i>
+          <span>Products</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="orders.html" class="nav-link active">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="users.html" class="nav-link">
+          <i class="fas fa-users"></i>
+          <span>Users</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="articles.html" class="nav-link">
+          <i class="fas fa-newspaper"></i>
+          <span>Articles</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navbar -->
+  <button class="mobile-menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  <nav class="navbar">
+    <div class="navbar-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search anything...">
+    </div>
+    <div class="user-profile">
+      <div class="user-info">
+        <div class="user-name">Admin User</div>
+        <div class="user-role">Super Admin</div>
+      </div>
+      <div class="user-avatar">A</div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Order Management</h1>
+        <p class="page-subtitle">Track and manage your customer orders</p>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card pending">
+        <div class="stat-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <div class="stat-value">156</div>
+        <div class="stat-label">Pending Orders</div>
+      </div>
+      <div class="stat-card processing">
+        <div class="stat-icon">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="stat-value">84</div>
+        <div class="stat-label">Processing</div>
+      </div>
+      <div class="stat-card completed">
+        <div class="stat-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="stat-value">4,320</div>
+        <div class="stat-label">Completed</div>
+      </div>
+      <div class="stat-card cancelled">
+        <div class="stat-icon">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="stat-value">23</div>
+        <div class="stat-label">Cancelled</div>
+      </div>
+    </div>
+
+    <div class="orders-table">
+      <div class="table-header">
+        <span class="checkbox-wrapper"><input type="checkbox"></span>
+        <span>Customer</span>
+        <span>Order ID</span>
+        <span>Date</span>
+        <span>Total</span>
+        <span>Payment</span>
+        <span>Status</span>
+        <span>Actions</span>
+      </div>
+
+      <div class="order-row">
+        <div class="checkbox-wrapper">
+          <input type="checkbox">
+        </div>
+        <div class="customer" data-label="Customer">
+          <div class="customer-info">
+            <div class="customer-name">Noelle Faure</div>
+            <div class="customer-email">noelle.j@example.com</div>
+          </div>
+        </div>
+        <div class="order-id" data-label="Order ID">#ORD-2023-1234</div>
+        <div class="order-date" data-label="Date">2024-03-15 14:30</div>
+        <div class="order-total" data-label="Total">$89.99</div>
+        <div class="payment-status" data-label="Payment">
+          <span class="status-badge status-paid">Paid</span>
+        </div>
+        <div class="status-badge status-processing" data-label="Status">Processing</div>
+        <div class="actions" data-label="Actions">
+          <button class="action-btn" title="View">
+            <i class="fas fa-eye"></i>
+          </button>
+          <button class="action-btn" title="Edit">
+            <i class="fas fa-edit"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="order-row">
+        <div class="checkbox-wrapper">
+          <input type="checkbox">
+        </div>
+        <div class="customer" data-label="Customer">
+          <div class="customer-info">
+            <div class="customer-name">Juliette Amora</div>
+            <div class="customer-email">j.amora@example.com</div>
+          </div>
+        </div>
+        <div class="order-id" data-label="Order ID">#ORD-2023-1235</div>
+        <div class="order-date" data-label="Date">2024-03-15 13:45</div>
+        <div class="order-total" data-label="Total">$145.00</div>
+        <div class="payment-status" data-label="Payment">
+          <span class="status-badge status-pending">Pending</span>
+        </div>
+        <div class="status-badge status-pending" data-label="Status">Pending</div>
+        <div class="actions" data-label="Actions">
+          <button class="action-btn" title="View">
+            <i class="fas fa-eye"></i>
+          </button>
+          <button class="action-btn" title="Edit">
+            <i class="fas fa-edit"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="order-row">
+        <div class="checkbox-wrapper">
+          <input type="checkbox">
+        </div>
+        <div class="customer" data-label="Customer">
+          <div class="customer-info">
+            <div class="customer-name">Vivienne Ciel</div>
+            <div class="customer-email">ciel.v@example.com</div>
+          </div>
+        </div>
+        <div class="order-id" data-label="Order ID">#ORD-2023-1236</div>
+        <div class="order-date" data-label="Date">2024-03-15 12:15</div>
+        <div class="order-total" data-label="Total">$67.50</div>
+        <div class="payment-status" data-label="Payment">
+          <span class="status-badge status-paid">Paid</span>
+        </div>
+        <div class="status-badge status-completed" data-label="Status">Completed</div>
+        <div class="actions" data-label="Actions">
+          <button class="action-btn" title="View">
+            <i class="fas fa-eye"></i>
+          </button>
+          <button class="action-btn" title="Edit">
+            <i class="fas fa-edit"></i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.querySelector('.sidebar');
+    const mainContent = document.querySelector('.main-content');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      mainContent.classList.toggle('shifted');
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !menuToggle.contains(e.target) && window.innerWidth <= 768) {
+        sidebar.classList.remove('active');
+        mainContent.classList.remove('shifted');
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        sidebar.classList.remove('active');
+        mainContent.classList.remove('shifted');
+      }
+    });
+
+    // Initialize checkboxes
+    const mainCheckbox = document.querySelector('.table-header input[type="checkbox"]');
+    const rowCheckboxes = document.querySelectorAll('.order-row input[type="checkbox"]');
+
+    mainCheckbox.addEventListener('change', (e) => {
+      rowCheckboxes.forEach(checkbox => {
+        checkbox.checked = e.target.checked;
+      });
+    });
+  </script>
+</body>
+</html>

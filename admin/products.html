@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Products - SweetBite</title>
+  <link rel="stylesheet" href="../assets/css/sweetbite-admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/sweetbite-custom.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="../assets/img/emboh.png">
+  <!-- CSS dipindahkan ke sweetbite-custom.css -->
+</head>
+<body>
+  <!-- Updated Sidebar -->
+  <div class="sidebar">
+    <a href="dashboard.html" class="logo">
+      <div class="logo-icon">
+        <img src="../assets/img/merah.png" alt="SweetBite Logo">
+      </div>
+      <span class="logo-text">SweetBite</span>
+    </a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="dashboard.html" class="nav-link">
+          <i class="fas fa-chart-line"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="products.html" class="nav-link active">
+          <i class="fas fa-box"></i>
+          <span>Products</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="orders.html" class="nav-link">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Orders</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="users.html" class="nav-link">
+          <i class="fas fa-users"></i>
+          <span>Users</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="articles.html" class="nav-link">
+          <i class="fas fa-newspaper"></i>
+          <span>Articles</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navbar -->
+  <button class="mobile-menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  <nav class="navbar">
+    <div class="navbar-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search anything...">
+    </div>
+    <div class="user-profile">
+      <div class="user-info">
+        <div class="user-name">Admin User</div>
+        <div class="user-role">Super Admin</div>
+      </div>
+      <div class="user-avatar">A</div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Product Management</h1>
+        <p class="page-subtitle">Manage your product catalog and inventory</p>
+      </div>
+      <button class="add-product-btn">
+        <i class="fas fa-plus"></i>
+        Add Product
+      </button>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon icon-products">
+          <i class="fas fa-box"></i>
+        </div>
+        <div class="stat-info">
+          <h3>456</h3>
+          <p>Total Products</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-active">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="stat-info">
+          <h3>398</h3>
+          <p>Active Products</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-stock">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="stat-info">
+          <h3>23</h3>
+          <p>Low Stock</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon icon-value">
+          <i class="fas fa-dollar-sign"></i>
+        </div>
+        <div class="stat-info">
+          <h3>$89.5K</h3>
+          <p>Total Value</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="products-table">
+      <div class="table-header">
+        <span class="checkbox-wrapper"><input type="checkbox"></span>
+        <span>Product</span>
+        <span>SKU</span>
+        <span>Category</span>
+        <span>Price</span>
+        <span>Stock</span>
+        <span>Status</span>
+        <span>Rating</span>
+        <span>Sales</span>
+        <span>Actions</span>
+      </div>
+
+      <div class="product-row">
+        <div class="checkbox-wrapper">
+          <input type="checkbox">
+        </div>
+        <div class="product-info" data-label="Product">
+          <img src="../assets/img/products/pastry2.jpg" alt="Product" class="product-image">
+          <div class="product-details">
+            <div class="product-name">Fruit Tartles Chair</div>
+            <div class="product-tag">Featured</div>
+          </div>
+        </div>
+        <div class="sku" data-label="SKU">NC-001</div>
+        <div class="category" data-label="Category">Chairs</div>
+        <div class="price" data-label="Price">$89.99</div>
+        <div class="stock" data-label="Stock">45</div>
+        <div class="status-badge status-active" data-label="Status">Active</div>
+        <div class="rating" data-label="Rating">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <span>4.8</span>
+          </div>
+          <span class="rating-count">(124)</span>
+        </div>
+        <div class="sales" data-label="Sales">89</div>
+        <div class="actions" data-label="Actions">
+          <button class="action-btn" title="View">
+            <i class="fas fa-eye"></i>
+          </button>
+          <button class="action-btn" title="Edit">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button class="action-btn" title="Delete">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-row">
+        <div class="checkbox-wrapper">
+          <input type="checkbox">
+        </div>
+        <div class="product-info" data-label="Product">
+          <img src="../assets/img/products/cake1.jpg" alt="Product" class="product-image">
+          <div class="product-details">
+            <div class="product-name">Flourless Chocolate Cake</div>
+            <div class="product-tag">New</div>
+          </div>
+        </div>
+        <div class="sku" data-label="SKU">KA-002</div>
+        <div class="category" data-label="Category">Chairs</div>
+        <div class="price" data-label="Price">$78.00</div>
+        <div class="stock" data-label="Stock">23</div>
+        <div class="status-badge status-active" data-label="Status">Active</div>
+        <div class="rating" data-label="Rating">
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <span>4.6</span>
+          </div>
+          <span class="rating-count">(89)</span>
+        </div>
+        <div class="sales" data-label="Sales">67</div>
+        <div class="actions" data-label="Actions">
+          <button class="action-btn" title="View">
+            <i class="fas fa-eye"></i>
+          </button>
+          <button class="action-btn" title="Edit">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button class="action-btn" title="Delete">
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.querySelector('.sidebar');
+    const mainContent = document.querySelector('.main-content');
+
+    menuToggle.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+      mainContent.classList.toggle('shifted');
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!sidebar.contains(e.target) && !menuToggle.contains(e.target) && window.innerWidth <= 768) {
+        sidebar.classList.remove('active');
+        mainContent.classList.remove('shifted');
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
+        sidebar.classList.remove('active');
+        mainContent.classList.remove('shifted');
+      }
+    });
+
+    // Initialize checkboxes
+    const mainCheckbox = document.querySelector('.table-header input[type="checkbox"]');
+    const rowCheckboxes = document.querySelectorAll('.product-row input[type="checkbox"]');
+
+    mainCheckbox.addEventListener('change', (e) => {
+      rowCheckboxes.forEach(checkbox => {
+        checkbox.checked = e.target.checked;
+      });
+    });
+  </script>
+</body>
+</html>

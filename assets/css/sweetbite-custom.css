@@ -1,0 +1,444 @@
+/* ======================================================================
+   SWEETBITE CUSTOM STYLES
+   Custom CSS for SweetBite brand colors and overrides
+   ====================================================================== */
+
+/* ======================================================================
+   BRAND COLORS
+   ====================================================================== */
+:root {
+    --sweetbite-red: #E60012;
+    --sweetbite-red-dark: #C0000F;
+    --sweetbite-white: #FFFFFF;
+    --sweetbite-dark: #051922;
+}
+
+/* ======================================================================
+   GENERAL BRAND COLOR OVERRIDES
+   ====================================================================== */
+
+/* Shopping cart hover effects */
+.shopping-cart:active i,
+.shopping-cart:hover i {
+    color: var(--sweetbite-red);
+    transition: color 0.3s;
+}
+
+/* Change all orange text to red */
+.orange-text {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Button styling */
+.boxed-btn {
+    background-color: var(--sweetbite-red) !important;
+    border-color: var(--sweetbite-red) !important;
+}
+
+.bordered-btn {
+    color: var(--sweetbite-red) !important;
+    border-color: var(--sweetbite-red) !important;
+    background-color: transparent !important;
+}
+
+.bordered-btn:hover {
+    background-color: var(--sweetbite-red) !important;
+    color: var(--sweetbite-white) !important;
+}
+
+/* Cart button styling */
+.cart-btn {
+    background-color: var(--sweetbite-red) !important;
+    border-color: var(--sweetbite-red) !important;
+    color: var(--sweetbite-white) !important;
+}
+
+.cart-btn:hover {
+    background-color: var(--sweetbite-red-dark) !important;
+}
+
+.cart-btn i.fas.fa-shopping-cart {
+    color: var(--sweetbite-white) !important;
+}
+
+/* Logo styling */
+.site-logo h1.logo-text {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Navigation menu */
+.main-menu ul li a {
+    color: var(--sweetbite-white) !important;
+}
+
+.main-menu ul li a:hover {
+    color: var(--sweetbite-red) !important;
+}
+
+.main-menu ul li.current-list-item a {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Hero text subtitle */
+.hero-text .subtitle {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Section titles */
+.section-title h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--sweetbite-red);
+    margin: 10px auto 0;
+}
+
+/* List icons */
+.list-icon i {
+    color: var(--sweetbite-red) !important;
+}
+
+.list-icon:hover i {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+.list-icon {
+    border: none !important;
+}
+
+/* Video play button */
+.video-play-btn {
+    background-color: var(--sweetbite-red) !important;
+    color: var(--sweetbite-white) !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+.video-play-btn:hover {
+    background-color: var(--sweetbite-red-dark) !important;
+}
+
+/* Sale percentage */
+.sale-percent,
+.sale-percent span {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Breadcrumb text */
+.breadcrumb-text p {
+    color: var(--sweetbite-red) !important;
+}
+
+.breadcrumb-text h1,
+.breadcrumb-section .breadcrumb-text h1,
+.breadcrumb-bg .breadcrumb-text h1 {
+    color: var(--sweetbite-white) !important;
+}
+
+/* Header icons */
+.header-icons .shopping-cart i,
+.header-icons .account-icon i,
+.mobile-show.account-icon i {
+    color: var(--sweetbite-white) !important;
+}
+
+.header-icons .shopping-cart:hover i,
+.header-icons .account-icon:hover i,
+.mobile-show.account-icon:hover i {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Mobile menu styling */
+.mean-container a.meanmenu-reveal span {
+    background-color: var(--sweetbite-white) !important;
+}
+
+.mean-container a.meanmenu-reveal {
+    color: var(--sweetbite-white) !important;
+    background-color: transparent !important;
+}
+
+/* Mobile account icon positioning */
+.mobile-show.account-icon {
+    position: absolute;
+    right: 60px;
+    top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--sweetbite-white) !important;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+/* ======================================================================
+   FOOTER STYLING
+   ====================================================================== */
+
+/* Footer widget titles */
+.footer-box h2.widget-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--sweetbite-red);
+    margin: 10px auto 0;
+}
+
+/* Footer icons */
+.footer-box ul li a i,
+.footer-box ul li i {
+    color: var(--sweetbite-red) !important;
+}
+
+/* Social media icons */
+.social-icons ul li a i {
+    color: var(--sweetbite-red) !important;
+}
+
+.social-icons ul li a:hover i {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+/* Footer arrows */
+.footer-box ul li::before {
+    content: '›';
+    color: var(--sweetbite-red) !important;
+    margin-right: 5px;
+}
+
+/* Email subscription button */
+.footer-box form button i {
+    color: var(--sweetbite-red) !important;
+}
+
+.footer-box form button:hover i {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+/* Copyright link */
+.copyright a {
+    color: var(--sweetbite-red) !important;
+}
+
+.copyright a:hover {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+/* Footer links hover */
+.footer-box ul li a:hover {
+    color: var(--sweetbite-red) !important;
+}
+
+/* ======================================================================
+   PRODUCT SECTION
+   ====================================================================== */
+
+/* Product filters */
+.product-filters ul li {
+    border: 2px solid var(--sweetbite-red) !important;
+    color: var(--sweetbite-red) !important;
+}
+
+.product-filters ul li.active {
+    background-color: var(--sweetbite-red) !important;
+    color: var(--sweetbite-white) !important;
+}
+
+.product-filters ul li:hover {
+    background-color: var(--sweetbite-red) !important;
+    color: var(--sweetbite-white) !important;
+}
+
+/* Product pricing */
+.single-product-item .product-price,
+.single-product-item .product-price span {
+    color: black !important;
+}
+
+.single-product-item h3 {
+    color: black !important;
+}
+
+/* ======================================================================
+   FORMS
+   ====================================================================== */
+
+/* Submit buttons */
+input[type="submit"] {
+    color: var(--sweetbite-white) !important;
+    background-color: var(--sweetbite-red) !important;
+    border-color: var(--sweetbite-red) !important;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--sweetbite-red-dark) !important;
+    color: var(--sweetbite-white) !important;
+}
+
+/* Contact form icons */
+.contact-form-box i {
+    color: var(--sweetbite-red) !important;
+}
+
+.contact-form-box i:hover {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+/* Location icon */
+.find-location i.fas.fa-map-marker-alt {
+    color: var(--sweetbite-red) !important;
+}
+
+.find-location i.fas.fa-map-marker-alt:hover {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+/* ======================================================================
+   MISCELLANEOUS
+   ====================================================================== */
+
+/* General icon colors */
+.fas, .fab, .far {
+    color: var(--sweetbite-red);
+}
+
+/* Hover effects for buttons */
+.cart-btn:hover,
+.boxed-btn:hover,
+.submit-btn:hover,
+input[type="submit"]:hover {
+    background-color: var(--sweetbite-red-dark) !important;
+}
+
+/* Team social links */
+.social-link-team li a {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.social-link-team li a i {
+    color: var(--sweetbite-red) !important;
+    background: none !important;
+}
+
+.social-link-team li a:hover i {
+    color: var(--sweetbite-red-dark) !important;
+}
+
+/* ======================================================================
+   ARTICLE PAGE SPECIFIC
+   ====================================================================== */
+
+/* Article page background overrides */
+body {
+    background-color: var(--sweetbite-white) !important;
+}
+
+.latest-news .container {
+    background-color: var(--sweetbite-white) !important;
+}
+
+.latest-news {
+    background-color: var(--sweetbite-white) !important;
+}
+
+/* Article cards styling */
+.single-latest-news {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--sweetbite-white);
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.news-text-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.news-text-box h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    min-height: 56px;
+}
+
+.blog-meta {
+    margin: 15px 0;
+    color: #666;
+}
+
+.news-text-box .excerpt {
+    flex: 1;
+    margin-bottom: 10px;
+    min-height: 72px;
+    line-height: 1.6;
+}
+
+.latest-news {
+    padding: 80px 0;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+/* Breadcrumb section */
+.breadcrumb-section.breadcrumb-bg {
+    background-color: transparent !important;
+}
+
+.breadcrumb-text h1 {
+    color: #333333 !important;
+}
+
+.breadcrumb-section {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* Remove any remaining red backgrounds */
+.single-latest-news,
+.news-text-box,
+.pagination-wrap {
+    background-color: var(--sweetbite-white) !important;
+}
+
+/* ======================================================================
+   RESPONSIVE DESIGN
+   ====================================================================== */
+
+/* Mobile adjustments */
+@media only screen and (max-width: 767.96px) {
+    .news-text-box h3 {
+        font-size: 18px;
+        min-height: auto;
+    }
+    
+    .news-text-box .excerpt {
+        min-height: auto;
+    }
+    
+    .latest-news {
+        padding: 40px 0;
+    }
+}
+
+/* Tablet adjustments */
+@media only screen and (max-width: 991.96px) {
+    .single-latest-news {
+        margin-bottom: 20px;
+    }
+} 

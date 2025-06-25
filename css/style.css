@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff !important;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.content-wrapper {
+    background-color: #ffffff;
+}
+
+/* Jika ada class lain yang menggunakan background merah, tambahkan override */
+.red-background {
+    background-color: #ffffff !important;
+}
